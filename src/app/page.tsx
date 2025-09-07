@@ -99,7 +99,7 @@ export default function Dashboard() {
                   {/* Square Avatar */}
                   <div className="flex-shrink-0">
                     <Avatar className="h-16 w-16 rounded-xl ring-4 ring-blue-500/20">
-                      <AvatarImage src="/avatars/student.png" alt={userData.name} />
+                      <AvatarImage src={user?.photo_url || "/avatars/student.png"} alt={userData.name} />
                       <AvatarFallback className="text-xl bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-xl">
                         {userData.name.split(' ').map(n => n[0]).join('')}
                       </AvatarFallback>

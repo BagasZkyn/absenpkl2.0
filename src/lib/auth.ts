@@ -183,33 +183,36 @@ class AuthService {
   }
 
   async updateProfile(profileData: Partial<UserProfile>) {
-    try {
-      if (!this.authState.user) {
-        throw new Error('No user logged in')
+      try {
+        if (!this.authState.user) {
+          throw new Error('No user logged in')
+        }
+        // Filter out undefined values
+        const updateFields = Object.fromEntries(
+          Object.entries({
+            ...profileData,
+            updated_at: new Date().toISOString()
+          }).filter(([_, v]) => v !== undefined)
+        )
+    
+        const { error } = await supabase
+          .from('user_profiles')
+          .update(updateFields)
+          .eq('id', this.authState.user.id)
+    
+        if (error) {
+          throw error
+        }
+    
+        await this.fetchUserProfile(this.authState.user.id)
+        return { success: true, data: this.authState.user }
+      } catch (error: any) {
+        console.error("Supabase update error:", error)
+        const errorMessage = error?.message || 'Failed to update profile'
+        this.authState.error = errorMessage
+        this.notifyListeners()
+        return { success: false, error: errorMessage }
       }
-
-      const { error } = await supabase
-        .from('user_profiles')
-        .update({
-          ...profileData,
-          updated_at: new Date().toISOString()
-        })
-        .eq('id', this.authState.user.id)
-
-      if (error) {
-        throw error
-      }
-
-      // Fetch ulang data user dari Supabase agar state frontend langsung ter-refresh
-      await this.fetchUserProfile(this.authState.user.id)
-
-      return { success: true, data: this.authState.user }
-    } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Failed to update profile'
-      this.authState.error = errorMessage
-      this.notifyListeners()
-      return { success: false, error: errorMessage }
-    }
   }
 
   async uploadProfilePhoto(file: File): Promise<{ success: boolean; photoUrl?: string; error?: string }> {

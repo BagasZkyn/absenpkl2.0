@@ -3,7 +3,8 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { Home, Calendar, BarChart3, User } from "lucide-react"
+import { Home, Calendar, BarChart3, User, Plus } from "lucide-react"
+import { motion } from "framer-motion"
 
 const navItems = [
   { href: "/", label: "Dashboard", icon: Home },
@@ -16,7 +17,12 @@ export function BottomNavigation() {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <motion.nav 
+      initial={{ y: 100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="fixed bottom-0 left-0 right-0 z-40 md:hidden border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 pb-safe"
+    >
       <div className="flex h-16 items-center justify-around">
         {navItems.map((item) => {
           const Icon = item.icon
@@ -27,12 +33,19 @@ export function BottomNavigation() {
               key={item.href}
               href={item.href}
               className={cn(
-                "flex flex-col items-center justify-center space-y-1 px-3 py-2 text-sm font-medium transition-colors",
+                "relative flex flex-col items-center justify-center space-y-1 px-3 py-2 text-sm font-medium transition-colors flex-1",
                 isActive
                   ? "text-primary"
                   : "text-muted-foreground hover:text-foreground"
               )}
             >
+              {isActive && (
+                <motion.div
+                  layoutId="bottom-nav-active-indicator"
+                  className="absolute -top-3 w-12 h-1 bg-primary rounded-full"
+                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                />
+              )}
               <Icon 
                 className={cn(
                   "h-5 w-5 transition-all",
@@ -44,6 +57,6 @@ export function BottomNavigation() {
           )
         })}
       </div>
-    </nav>
+    </motion.nav>
   )
 }

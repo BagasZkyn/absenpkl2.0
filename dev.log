@@ -1,0 +1,156 @@
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): server.ts src/**/*[39m
+[33m[nodemon] watching extensions: ts,tsx,js,jsx[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+   Downloading swc package @next/swc-wasm-nodejs... to /data/data/com.termux/files/home/.cache/next-swc
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+> Ready on http://0.0.0.0:3000
+> Socket.IO server running at ws://0.0.0.0:3000/api/socketio
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: Unable to snapshot resolve dependencies
+ ○ Compiling / ...
+Request timed out after 3000ms
+
+Retrying 1/3...
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: Unable to snapshot resolve dependencies
+ ⨯ src/app/layout.tsx
+An error occurred in `next/font`.
+
+Error: Cannot find module '../lightningcss.android-arm64.node'
+Require stack:
+- /data/data/com.termux/files/home/absenpkl/node_modules/lightningcss/node/index.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/@tailwindcss/node/dist/index.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/@tailwindcss/postcss/dist/index.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack/config/blocks/css/index.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack/config/index.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack-config.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/lib/router-server.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/lib/start-server.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/next.js
+- /data/data/com.termux/files/home/absenpkl/server.ts
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at nextResolveSimple (/data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:4:1004)
+    at /data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:3:2630
+    at /data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1542
+    at resolveTsPaths (/data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:4:760)
+    at /data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:4:1102
+    at m._resolveFilename (file:///data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-B7jrtLTO.mjs:1:789)
+    at /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Module._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (/data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (/data/data/com.termux/files/home/absenpkl/node_modules/lightningcss/node/index.js:22:22)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object.transformer (/data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Module._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (/data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (/data/data/com.termux/files/home/absenpkl/node_modules/@tailwindcss/node/dist/index.js:15:188)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object.transformer (/data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Module._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (/data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (/data/data/com.termux/files/home/absenpkl/node_modules/@tailwindcss/postcss/dist/index.js:1:1328)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object.transformer (/data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Module._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (/data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:61:44
+    at plugin (/data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:30:44)
+    at Processor.normalize (/data/data/com.termux/files/home/absenpkl/node_modules/next/node_modules/postcss/lib/processor.js:18:13)
+    at new Processor (/data/data/com.termux/files/home/absenpkl/node_modules/next/node_modules/postcss/lib/processor.js:11:25)
+ ⨯ src/app/layout.tsx
+An error occurred in `next/font`.
+
+Error: Cannot find module '../lightningcss.android-arm64.node'
+Require stack:
+- /data/data/com.termux/files/home/absenpkl/node_modules/lightningcss/node/index.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/@tailwindcss/node/dist/index.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/@tailwindcss/postcss/dist/index.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack/config/blocks/css/index.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack/config/index.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack-config.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/lib/router-server.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/lib/start-server.js
+- /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/next.js
+- /data/data/com.termux/files/home/absenpkl/server.ts
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at nextResolveSimple (/data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:4:1004)
+    at /data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:3:2630
+    at /data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1542
+    at resolveTsPaths (/data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:4:760)
+    at /data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:4:1102
+    at m._resolveFilename (file:///data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-B7jrtLTO.mjs:1:789)
+    at /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Module._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (/data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (/data/data/com.termux/files/home/absenpkl/node_modules/lightningcss/node/index.js:22:22)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object.transformer (/data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Module._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (/data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (/data/data/com.termux/files/home/absenpkl/node_modules/@tailwindcss/node/dist/index.js:15:188)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object.transformer (/data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Module._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (/data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (/data/data/com.termux/files/home/absenpkl/node_modules/@tailwindcss/postcss/dist/index.js:1:1328)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object.transformer (/data/data/com.termux/files/home/absenpkl/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Module._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (/data/data/com.termux/files/home/absenpkl/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at /data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:61:44
+    at plugin (/data/data/com.termux/files/home/absenpkl/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:30:44)
+    at Processor.normalize (/data/data/com.termux/files/home/absenpkl/node_modules/next/node_modules/postcss/lib/processor.js:18:13)
+    at new Processor (/data/data/com.termux/files/home/absenpkl/node_modules/next/node_modules/postcss/lib/processor.js:11:25)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: Unable to snapshot resolve dependencies
